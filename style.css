@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+}
+body {
+  background: linear-gradient(pink, rgb(107, 233, 238), rgb(240, 118, 240));
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10vh;
+}
+form {
+  justify-self: flex-start;
+  width: 50vw;
+  height: 10vh;
+  outline: 5px solid purple;
+  background-color: rgb(255, 240, 254);
+  border-radius: 2vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vmin;
+  font-size: 1.5vw;
+  box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, 0.5);
+}
+form button {
+  background-color: plum;
+  border-radius: 1vmin;
+  padding: 1vh 1vw;
+  color: white;
+  font-family:
+    poppins, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5vw;
+  cursor: pointer;
+  border: 2px solid plum;
+  transition-duration: 200ms;
+}
+form button:hover {
+  background-color: purple;
+  border: 2px solid plum;
+}
+form input {
+  font-size: 1.5vw;
+  padding: 1vh 1vw;
+  outline: none;
+  background-color: rgb(255, 248, 254);
+  border: none;
+}
+
+.list {
+  height: 60vh;
+  width: 50vw;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vh;
+  backdrop-filter: blur(200px);
+  border-radius: 2vmin;
+  box-sizing: content-box;
+  padding: 2vh 2vw;
+  /* overflow-y: scroll; */
+  overflow-x: hidden;
+  box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, 0.5);
+}
+
+.task {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1vh 2vw;
+  gap: 5vw;
+  background-color: plum;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  height: 10vh;
+}
+.task h4 {
+  color: black;
+}
+.del,
+.edit {
+  padding: 1vh 1vw;
+  background-color: purple;
+  font-size: 1.3vw;
+  color: white;
+  border-radius: 20%;
+  font-weight: 500;
+  cursor: pointer;
+  border: 2px solid purple;
+}
